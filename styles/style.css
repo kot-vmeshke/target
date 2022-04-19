@@ -396,6 +396,11 @@ body {
   margin-bottom: 10px;
 }
 
+.reviews__container {
+  padding-bottom: 200px;
+  padding: 0 70px 200px;
+  max-width: 1340px;
+}
 .reviews .section__title {
   text-align: center;
 }
@@ -449,6 +454,12 @@ body {
   background: #fffae8;
   border-radius: 20px;
   padding: 25px;
+  margin: 0 10px;
+  filter: blur(3px);
+}
+.review.slick-center {
+  filter: none;
+  min-height: 350px;
 }
 .review__text {
   font-style: normal;
@@ -621,4 +632,66 @@ body {
   top: calc(50% - 11px);
   left: 0;
   background: url("../assets/svg/mail.svg") no-repeat center/contain;
+}
+
+.slider {
+  min-width: 0;
+  position: relative;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-track {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slick-arrow {
+  position: absolute;
+  top: calc(50% - 30px);
+  left: -50px;
+  flex-shrink: 0;
+  border: none;
+  background: transparent url("../assets/svg/arrow_blue.svg") no-repeat center/contain;
+  display: block;
+  width: 40px;
+  height: 20px;
+  transform: rotate(90deg);
+  cursor: pointer;
+  transition: 0.5s;
+  font-size: 0;
+}
+.slick-arrow:hover {
+  filter: brightness(160%);
+}
+.slick-arrow.slick-next {
+  transform: rotate(270deg);
+  left: auto;
+  right: -50px;
+}
+
+.slick-dots {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 40px;
+  list-style: none;
+}
+.slick-dots li.slick-active button {
+  background: #05326D;
+}
+.slick-dots li button {
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 12px;
+  cursor: pointer;
+  background: #4282D3;
+  border: none;
+  font-size: 0;
 }/*# sourceMappingURL=style.css.map */

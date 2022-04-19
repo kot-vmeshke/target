@@ -12,7 +12,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles/style.css" />
-    <script src="./main.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+    <script src="./script/main.js" defer></script>
+    <script src="./script/slick.min.js" defer></script>
+    <script src="./script/slider.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -246,25 +249,33 @@
           <div class="container reviews__container">
             <h2 class="section__title">Відгуки</h2>
             <div class="reviews__slider">
-              <button class="reviews__button button-left"></button>
-              <div class="review">
-                <p class="review__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur dolore inventore, tempore adipisci at temporibus minus dolorem dignissimos suscipit eveniet!<span>Lorem, ipsum.</span></p>
-              </div>
-              <div class="review">
-                <p class="review__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur dolore inventore, tempore adipisci at temporibus minus dolorem dignissimos suscipit eveniet!<span>Lorem, ipsum.</span></p>
-              </div>
-              <div class="review">
-                <p class="review__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur dolore inventore, tempore adipisci at temporibus minus dolorem dignissimos suscipit eveniet!<span>Lorem, ipsum.</span></p>
-              </div>
-              <button class="reviews__button button-right"></button>
+              <!-- <button class="reviews__button button-left"></button> -->
+                <div class="slider">
+                  <div class="review">
+                    <p class="review__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur dolore inventore, tempore adipisci at temporibus minus dolorem dignissimos suscipit eveniet!<span>Lorem, ipsum.</span></p>
+                  </div>
+                  <div class="review">
+                    <p class="review__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur dolore inventore, tempore adipisci at temporibus minus dolorem dignissimos suscipit eveniet!<span>Lorem, ipsum.</span></p>
+                  </div>
+                  <div class="review">
+                    <p class="review__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur dolore inventore, tempore adipisci at temporibus minus dolorem dignissimos suscipit eveniet!<span>Lorem, ipsum.</span></p>
+                  </div>
+                  <div class="review">
+                    <p class="review__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur dolore inventore, tempore adipisci at temporibus minus dolorem dignissimos suscipit eveniet!<span>Lorem, ipsum.</span></p>
+                  </div>
+                  <div class="review">
+                    <p class="review__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur dolore inventore, tempore adipisci at temporibus minus dolorem dignissimos suscipit eveniet!<span>Lorem, ipsum.</span></p>
+                  </div>
+                </div>
+              <!-- <button class="reviews__button button-right"></button> -->
             </div>
-            <div class="reviews__pagination">
+            <!-- <div class="reviews__pagination">
               <span class="active"></span>
               <span></span>
               <span></span>
               <span></span>
               <span></span>
-            </div>
+            </div> -->
           </div>
         </section>
       </div>
