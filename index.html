@@ -1,311 +1,534 @@
 <!DOCTYPE html>
 <html lang="ua">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Антикризовий курс</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
-    <script src="./script/main.js" defer></script>
-    <script src="./script/slick.min.js" defer></script>
-    <script src="./script/slider.js" defer></script>
-  </head>
-  <body>
-    <header class="header">
-      <div class="container header__container">
-        <div class="date">
-          <div class="date__item">
-            <p class="date__description">Старт</p>
-            <p class="date__title">16 травня</p>
-          </div>
-          <div class="date__item">
-            <p class="date__description">Тривалість</p>
-            <p class="date__title">4 тижні</p>
-          </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Антикризовий курс</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="shortcut icon" href="./assets/svg/favicon.svg" type="image/svg" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+  <script src="./script/main.js" defer></script>
+  <script src="./script/slick.min.js" defer></script>
+  <script src="./script/slider.js" defer></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__container">
+      <div class="date">
+        <div class="date__item">
+          <p class="date__description">Старт</p>
+          <p class="date__title">11 травня</p>
         </div>
-        <nav class="header__nav">
-          <ul class="header__nav-list">
-            <li class="header__list-item">
-              <a href="#for-whom" class="header__nav-link">Для кого</a>
-            </li>
-            <li class="header__list-item">
-              <a href="#program" class="header__nav-link">Програма курсу</a>
-            </li>
-            <li class="header__list-item">
-              <a href="#benefits" class="header__nav-link">Результат</a>
-            </li>
-            <li class="header__list-item">
-              <a href="#author" class="header__nav-link">Автор курсу</a>
-            </li>
-            <li class="header__list-item">
-              <a href="#reviews" class="header__nav-link">Відгуки</a>
-            </li>
-            <li class="header__list-item">
-              <a href="#registration" class="header__nav-link">Реєстрація</a>
-            </li>
-            <li class="header__list-item">
-              <a href="#contacts" class="header__nav-link">Контакти</a>
-            </li>
-          </ul>
-        </nav>
+        <div class="date__item">
+          <p class="date__description">Тривалість</p>
+          <p class="date__title">4 тижні</p>
+        </div>
       </div>
-    </header>
-    <main class="main">
-      <section class="hero">
-        <div class="container hero__container">
-          <div class="hero__content-wrap">
-            <h1 class="hero__title">АНТИКРИЗОВИЙ КУРС
-              <strong>ПО&nbsp;ТАРГЕТОВАНІЙ РЕКЛАМІ</strong>
-              У&nbsp;FACEBOOK ТА INSTAGRAM
-              <span>Basic 1.0</span>
-            </h1>
-            <a href="#program" class="hero__button">Дізнатись детальніше</a>
-          </div>
-          <img src="./assets/image/Olga_main.png" alt="Оля" class="hero__img" width="536" height="524">
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__list-item">
+            <a href="#for-whom" class="header__nav-link">Для кого</a>
+          </li>
+          <li class="header__list-item">
+            <a href="#program" class="header__nav-link">Програма курсу</a>
+          </li>
+          <li class="header__list-item">
+            <a href="#benefits" class="header__nav-link">Результат</a>
+          </li>
+          <li class="header__list-item">
+            <a href="#author" class="header__nav-link">Автор курсу</a>
+          </li>
+          <li class="header__list-item">
+            <a href="#reviews" class="header__nav-link">Відгуки</a>
+          </li>
+          <li class="header__list-item">
+            <a href="#registration" class="header__nav-link">Реєстрація</a>
+          </li>
+          <li class="header__list-item">
+            <a href="#contacts" class="header__nav-link">Контакти</a>
+          </li>
+        </ul>
+      </nav>
+      <span class="header__nav-button"></span>
+    </div>
+  </header>
+  <main class="main">
+    <section class="hero">
+      <div class="container hero__container">
+        <div class="hero__content-wrap">
+          <h1 class="hero__title">
+            АНТИКРИЗОВИЙ КУРС
+            <strong>ПО&nbsp;ТАРГЕТОВАНІЙ РЕКЛАМІ</strong>
+            У&nbsp;FACEBOOK ТА&nbsp;INSTAGRAM
+            <span>Basic 1.0</span>
+          </h1>
+          <a href="#program" class="hero__button">Дізнатись детальніше</a>
         </div>
-      </section>
-      <section class="section for-whom" id="for-whom">
-        <div class="container for-whom__container">
-          <h2 class="section__title">Кому буде корисний курс:</h2>
-        <p class="section__description">Усім, хто хоче мати базові системні знання в таргеті, хоче навчитися швидко налаштовувати рекламні кампанії та отримувати гарні результати від реклами</p>
+        <img src="./assets/image/Olga_main.png" alt="Оля" class="hero__img" />
+      </div>
+    </section>
+    <section class="section for-whom" id="for-whom">
+      <div class="container for-whom__container">
+        <h2 class="section__title">Кому буде корисний курс:</h2>
+        <p class="section__description">
+          Усім, хто хоче мати базові системні знання в&nbsp;таргеті, хоче
+          навчитися швидко налаштовувати рекламні кампанії та&nbsp;отримувати
+          гарні результати від реклами
+        </p>
         <div class="for-whom__content-wrap">
           <div class="for-whom__card">
-            <img src="./assets/image/smm.png" alt="СММ-спеціаліст" class="for-whom__img">
+            <img src="./assets/image/smm.png" alt="СММ-спеціаліст" class="for-whom__img" />
             <h4 class="for-whom__card-title">СММ-спеціалістам</h4>
-            <p class="for-whom__card-description">Пізнаєте тонкощі та нюанси налаштування таргету. Будете впевненіше почуватися і зможете збільшити свій чек.</p>
+            <p class="for-whom__card-description">
+              Пізнаєте тонкощі та&nbsp;нюанси налаштування таргету. Будете
+              впевненіше почуватися і&nbsp;зможете збільшити свій чек.
+            </p>
           </div>
           <div class="for-whom__card">
-            <img src="./assets/image/boss.png" alt="Підприємець" class="for-whom__img">
+            <img src="./assets/image/boss.png" alt="Підприємець" class="for-whom__img" />
             <h4 class="for-whom__card-title">Підприємцям</h4>
-            <p class="for-whom__card-description">Ви розберетеся в рекламі Facebook і Instagram і зможете самі налаштовувати рекламні кампанії, а також грамотно контролювати найманого співробітника.</p>
+            <p class="for-whom__card-description">
+              Ви&nbsp;розберетеся в&nbsp;рекламі Facebook і&nbsp;Instagram
+              і&nbsp;зможете самі налаштовувати рекламні кампанії,
+              а&nbsp;також грамотно контролювати найманого співробітника.
+            </p>
           </div>
           <div class="for-whom__card">
-            <img src="./assets/image/blogger.png" alt="Блогер" class="for-whom__img">
+            <img src="./assets/image/blogger.png" alt="Блогер" class="for-whom__img" />
             <h4 class="for-whom__card-title">Блогерам, експертам</h4>
-            <p class="for-whom__card-description">Розберетеся в базових кнопках рекламного кабінету, зможете самостійно налаштовувати таргет на свій блог та ефективно використовувати кнопку “просувати”</p>
+            <p class="for-whom__card-description">
+              Розберетеся в&nbsp;базових кнопках рекламного кабінету, зможете
+              самостійно налаштовувати таргет на&nbsp;свій блог
+              та&nbsp;ефективно використовувати кнопку &laquo;просувати&raquo;
+            </p>
           </div>
         </div>
         <a href="#program" class="for-whom__button">Хочу навчатись</a>
-        </div>
-      </section>
-      <section class="section program" id="program">
-        <div class="container program__container">
-          <h2 class="section__title">Програма курсу</h2>
-          <div class="program__content-wrap">
-            <div class="accordion">
-              <span class="module-title">Модуль 1</span><span class="arrow"></span>
-            </div>
-            <div class="acc-panel">
-              <p сlass="module-subtitle">1. Безпека сторінки Фб та Іг.</p>
-              <ul class="module-description">
-                <li class="module-description__item">безпека Інстаграму</li>
-                <li class="module-description__item">безпека Фейсбуку</li>
-              </ul>
-              <p сlass="module-subtitle">2. Структура роботи Фб</p>
-              <p сlass="module-subtitle">3. Види блокувань. Чат техпідтримки. Посилання для розблокування</p>
-              <p сlass="module-subtitle">4. Аналіз цільової аудиторії. Як оформити інстаграм під свою ЦА.</p>
-              <ul class="module-description">
-                <li class="module-description__item">аналіз ЦА</li>
-                <li class="module-description__item">чому потрібно виділятись</li>
-                <li class="module-decription__item">7 точок дотику клієнта з вашою сторінкою інстаграм</li>
-              </ul>
-            </div>
-            <div class="accordion">
-              <span class="module-title">Модуль 2</span><span class="arrow"></span>
-            </div>
-            <div class="acc-panel">
-              <p сlass="module-subtitle">1. Як створити рекламний кабінет, БМ </p>
-              <ul class="module-description">
-                <li class="module-description__item">створення бізнес сторінки</li>
-                <li class="module-description__item">створення особистого РК</li>
-              </ul>
-              <p сlass="module-subtitle">2. Огляд інструментів РК і БМ. Доступи</p>
-              <ul class="module-description">
-                <li class="module-description__item">різниця між особистим РК і РК в БМ</li>
-                <li class="module-description__item">створення БМ</li>
-                <li class="module-decription__item">огляд інструментів БМ</li>
-                <li class="module-decription__item">видача доступів</li>
-              </ul>
-            </div>
-            <div class="accordion">
-              <span class="module-title">Модуль 3</span><span class="arrow"></span>
-            </div>
-            <div class="acc-panel">
-              <p сlass="module-subtitle">1. Створення аудиторій</p>
-              <ul class="module-description">
-                <li class="module-description__item">збережена</li>
-                <li class="module-description__item">тепла</li>
-                <li class="module-description__item">ЛАЛ</li>
-              </ul>
-              <p сlass="module-subtitle">2. Основні рекламні цілі</p>
-              <ul class="module-description">
-                <li class="module-description__item">трафік</li>
-                <li class="module-description__item">охоплення</li>
-                <li class="module-decription__item">залученість</li>
-                <li class="module-decription__item">лід ген</li>
-                <li class="module-decription__item">повідомлення</li>
-              </ul>
-            </div>
-            <div class="accordion">
-              <span class="module-title">Модуль 4</span><span class="arrow"></span>
-            </div>
-            <div class="acc-panel">
-              <p сlass="module-subtitle">1. Як створити ефективні рекламні макети</p>
-              <ul class="module-description">
-                <li class="module-description__item">маркетинг в рекламі</li>
-                <li class="module-description__item">тригери і стимули в рекламних макетах</li>
-                <li class="module-description__item">де робити макети?</li>
-              </ul>
-            </div>
-            <div class="accordion">
-              <span class="module-title">Модуль 5</span><span class="arrow"></span>
-            </div>
-            <div class="acc-panel">
-              <p сlass="module-subtitle">1. Покрове налаштування реклами для інстаграму</p>
-              <ul class="module-description">
-                <li class="module-description__item">покроковий запуск реклами</li>
-                <li class="module-description__item">тестування</li>
-              </ul>
-              <p сlass="module-subtitle">2. Як ефективно використовувати кнопку Просувати</p>
-              <ul class="module-description">
-                <li class="module-description__item">як підготувати контент для набору підписників</li>
-                <li class="module-description__item">як працює кнопка просувати</li>
-              </ul>
-            </div>
-            <div class="accordion">
-              <span class="module-title">Модуль 6</span><span class="arrow"></span>
-            </div>
-            <div class="acc-panel">
-              <p сlass="module-subtitle">1. Аналіз ефективності показників. Оптимізація</p>
-              <ul class="module-description">
-                <li class="module-description__item">як відслідковувати ефективність реклами</li>
-                <li class="module-description__item">як оптимізувати рекламу</li>
-              </ul>
-            </div>
-          </div>
-          <a href="#registration" class="program__button">Хочу навчатись</a>
-        </div>
-      </section>
-      <section class="section benefits" id="benefits">
-        <div class="container benefits__container">
-          <h2 class="section__title">Що ви отримаєте після проходження курсу:</h2>
-          <div class="benefits__content-wrap">
-            <div class="benefit">
-              <img src="./assets/image/info.png" alt="інформація" class="benefit__img">
-              <h4 class="benefit__title">Актуальну і повну інформацію</h4>
-              <p class="benefit__descrpition">Всі уроки постійно перезаписуються, оскільки інструменти Facebook оновлюються щодня.</p>
-            </div>
-            <div class="benefit">
-              <img src="./assets/image/check.png" alt="чек-лист" class="benefit__img">
-              <h4 class="benefit__title">Інструкції, чек-листи, шпаргалки</h4>
-              <p class="benefit__descrpition">Кожен урок підкріплений додатковим матеріалом для зручності.
-              </p>
-            </div>
-            <div class="benefit">
-              <img src="./assets/image/chat.png" alt="чат" class="benefit__img">
-              <h4 class="benefit__title">Чат підтримки</h4>
-              <p class="benefit__descrpition">Чат залишається з вами назавжди, там можна в будь-який момент отримати відповідь на свої питання</p>
-            </div>
-            <div class="benefit">
-              <img src="./assets/image/idea.png" alt="впевненість" class="benefit__img">
-              <h4 class="benefit__title">Впевненість у собі</h4>
-              <p class="benefit__descrpition">Системні знання, розуміння структури рекламного кабінету Фейсбук. Більше жодних неправильних дій, які призводять до зливу бюджетів та не дають результатів.</p>
-            </div>
-          </div>
-          <a href="#registration" class="program__button">Хочу навчатись</a>
-        </div>
-      </section>
-      <div class="section-bg">
-        <section class="author section" id="author">
-          <div class="container author__container">
-            <img src="./assets/image/Olga_author.png" alt="Оля" class="author__img">
-            <div class="author__content-wrap">
-              <p class="author__subtitle">Автор курсу</p>
-              <h2 class="author__title">Ольга Поліщук</h2>
-              <ul class="author__about">
-                <li>Маркетолог з психологічною освітою та викладач таргетованої реклами і маркетингу. За моїми плечима досвід роботи керівником маркетингових відділів та таргетологом у проектах українського шоу-бізнесу: Дмитро Карпачов, Оля Полякова, Кирило Куницький, муз.група Руки Вверх.</li>
-                <li>Офіційний партнер Facebook</li>
-                <li>До війни, керівник відділу маркетингу в AVS agency.</li>
-                <li>Працюю з рекламним бюджетом - 135 000 $ на місяць.</li>
-                <li>Вклала більше 15 000 $ у своє навчання.</li>
-                <li>Викладач таргетованої реклами та маркетингу на курсах Кирила Куницького та Дмитра Карпачова.</li>
-                <li>Методолог та автор програми курсу з таргету у відомій онлайн школі України (не можу вказувати назву).</li>
-                <li>Засновниця індивідуального формату навчання - Наставництва з таргетованої реклами, маркетингу та автоматизації воронок продажів.</li>
-                <li>Спікер курсу Антикризовий Маркетинг від Єви Висоцької (@bilamolfarka).</li>
-                <li>Автор курсу “Просування з 0” для підприємців Чеської Республіки (мова курсу чеська).</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-        <section class="section reviews" id="reviews">
-          
-          <div class="container reviews__container">
-            <h2 class="section__title">Відгуки</h2>
-            <div class="reviews__slider">
-              <!-- <button class="reviews__button button-left"></button> -->
-                <div class="slider">
-                  <div class="review">
-                    <p class="review__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur dolore inventore, tempore adipisci at temporibus minus dolorem dignissimos suscipit eveniet!<span>Lorem, ipsum.</span></p>
-                  </div>
-                  <div class="review">
-                    <p class="review__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur dolore inventore, tempore adipisci at temporibus minus dolorem dignissimos suscipit eveniet!<span>Lorem, ipsum.</span></p>
-                  </div>
-                  <div class="review">
-                    <p class="review__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur dolore inventore, tempore adipisci at temporibus minus dolorem dignissimos suscipit eveniet!<span>Lorem, ipsum.</span></p>
-                  </div>
-                  <div class="review">
-                    <p class="review__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur dolore inventore, tempore adipisci at temporibus minus dolorem dignissimos suscipit eveniet!<span>Lorem, ipsum.</span></p>
-                  </div>
-                  <div class="review">
-                    <p class="review__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur dolore inventore, tempore adipisci at temporibus minus dolorem dignissimos suscipit eveniet!<span>Lorem, ipsum.</span></p>
-                  </div>
-                </div>
-              <!-- <button class="reviews__button button-right"></button> -->
-            </div>
-            <!-- <div class="reviews__pagination">
-              <span class="active"></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-            </div> -->
-          </div>
-        </section>
       </div>
-      <section class="section registration" id="registration">
-        <div class="container registration__container">
-          <div class="registration__left">
-            <h2 class="section__title">Тариф</h2>
-            <ul class="rate__description">
-              <li>6 модулів</li>
-              <li>30 уроків</li>
-              <li>Чек-листи, шаблони, інструкції</li>
-              <li>Чат підтримки та зворотнього зв’язку з&nbsp;Ольгою</li>
-              <li>Доступ до уроків на 6 місяців</li>
+    </section>
+    <section class="section program" id="program">
+      <div class="container program__container">
+        <h2 class="section__title">Програма курсу</h2>
+        <div class="program__content-wrap">
+          <div class="accordion">
+            <span class="module-title">Модуль 1</span><span class="arrow"></span>
+          </div>
+          <div class="acc-panel">
+            <p сlass="module-subtitle">
+              1. Безпека сторінки&nbsp;Фб та&nbsp;Іг.
+            </p>
+            <ul class="module-description">
+              <li class="module-description__item">безпека Інстаграму</li>
+              <li class="module-description__item">безпека Фейсбуку</li>
+            </ul>
+            <p сlass="module-subtitle">2. Структура роботи Фб</p>
+            <p сlass="module-subtitle">
+              3. Види блокувань. Чат техпідтримки. Посилання для розблокування
+            </p>
+            <p сlass="module-subtitle">
+              4. Аналіз цільової аудиторії. Як&nbsp;оформити інстаграм під
+              свою ЦА.
+            </p>
+            <ul class="module-description">
+              <li class="module-description__item">аналіз&nbsp;ЦА</li>
+              <li class="module-description__item">
+                чому потрібно виділятись
+              </li>
+              <li class="module-decription__item">
+                7&nbsp;точок дотику клієнта з&nbsp;вашою сторінкою інстаграм
+              </li>
             </ul>
           </div>
-          <div class="registration__right">
-            <p class="rate__del-price">Повна вартість курсу - <del>3700 грн</del></p>
-            <p class="rate__price">Вартість на час війни - <span>890 грн*</span></p>
+          <div class="accordion">
+            <span class="module-title">Модуль 2</span><span class="arrow"></span>
           </div>
-          <a href="wizzy-lab" class="registration__button">Реєстріція на курс</a>
-          <p class="footnote">* 200 грн з кожної оплати надсилаю на ЗСУ, відзвітую в інстаграмі <a href="https://www.instagram.com/olha.polishchuk_/">@olha.polishchuk_</a></p>
+          <div class="acc-panel">
+            <p сlass="module-subtitle">
+              1. Як&nbsp;створити рекламний кабінет, БМ
+            </p>
+            <ul class="module-description">
+              <li class="module-description__item">
+                створення бізнес сторінки
+              </li>
+              <li class="module-description__item">
+                створення особистого РК
+              </li>
+            </ul>
+            <p сlass="module-subtitle">
+              2. Огляд інструментів&nbsp;РК і&nbsp;БМ. Доступи
+            </p>
+            <ul class="module-description">
+              <li class="module-description__item">
+                різниця між особистим&nbsp;РК і&nbsp;РК в&nbsp;БМ
+              </li>
+              <li class="module-description__item">створення&nbsp;БМ</li>
+              <li class="module-decription__item">
+                огляд інструментів&nbsp;БМ
+              </li>
+              <li class="module-decription__item">видача доступів</li>
+            </ul>
+          </div>
+          <div class="accordion">
+            <span class="module-title">Модуль 3</span><span class="arrow"></span>
+          </div>
+          <div class="acc-panel">
+            <p сlass="module-subtitle">1. Створення аудиторій</p>
+            <ul class="module-description">
+              <li class="module-description__item">збережена</li>
+              <li class="module-description__item">тепла</li>
+              <li class="module-description__item">ЛАЛ</li>
+            </ul>
+            <p сlass="module-subtitle">2. Основні рекламні цілі</p>
+            <ul class="module-description">
+              <li class="module-description__item">трафік</li>
+              <li class="module-description__item">охоплення</li>
+              <li class="module-decription__item">залученість</li>
+              <li class="module-decription__item">лід ген</li>
+              <li class="module-decription__item">повідомлення</li>
+            </ul>
+          </div>
+          <div class="accordion">
+            <span class="module-title">Модуль 4</span><span class="arrow"></span>
+          </div>
+          <div class="acc-panel">
+            <p сlass="module-subtitle">
+              1. Як&nbsp;створити ефективні рекламні макети
+            </p>
+            <ul class="module-description">
+              <li class="module-description__item">
+                маркетинг в&nbsp;рекламі
+              </li>
+              <li class="module-description__item">
+                тригери і&nbsp;стимули в&nbsp;рекламних макетах
+              </li>
+              <li class="module-description__item">де&nbsp;робити макети?</li>
+            </ul>
+          </div>
+          <div class="accordion">
+            <span class="module-title">Модуль 5</span><span class="arrow"></span>
+          </div>
+          <div class="acc-panel">
+            <p сlass="module-subtitle">
+              1. Покрове налаштування реклами для інстаграму
+            </p>
+            <ul class="module-description">
+              <li class="module-description__item">
+                покроковий запуск реклами
+              </li>
+              <li class="module-description__item">тестування</li>
+            </ul>
+            <p сlass="module-subtitle">
+              2. Як&nbsp;ефективно використовувати кнопку Просувати
+            </p>
+            <ul class="module-description">
+              <li class="module-description__item">
+                як&nbsp;підготувати контент для набору підписників
+              </li>
+              <li class="module-description__item">
+                як&nbsp;працює кнопка просувати
+              </li>
+            </ul>
+          </div>
+          <div class="accordion">
+            <span class="module-title">Модуль 6</span><span class="arrow"></span>
+          </div>
+          <div class="acc-panel">
+            <p сlass="module-subtitle">
+              1. Аналіз ефективності показників. Оптимізація
+            </p>
+            <ul class="module-description">
+              <li class="module-description__item">
+                як&nbsp;відслідковувати ефективність реклами
+              </li>
+              <li class="module-description__item">
+                як&nbsp;оптимізувати рекламу
+              </li>
+            </ul>
+          </div>
+        </div>
+        <a href="#registration" class="program__button">Хочу навчатись</a>
+      </div>
+    </section>
+    <section class="section benefits" id="benefits">
+      <div class="container benefits__container">
+        <h2 class="section__title">
+          Що&nbsp;ви&nbsp;отримаєте після проходження курсу:
+        </h2>
+        <div class="benefits__content-wrap">
+          <div class="benefit">
+            <img src="./assets/image/info.png" alt="інформація" class="benefit__img" />
+            <h4 class="benefit__title">Актуальну і&nbsp;повну інформацію</h4>
+            <p class="benefit__descrpition">
+              Всі уроки постійно перезаписуються, оскільки інструменти
+              Facebook оновлюються щодня.
+            </p>
+          </div>
+          <div class="benefit">
+            <img src="./assets/image/check.png" alt="чек-лист" class="benefit__img" />
+            <h4 class="benefit__title">Інструкції, чек-листи, шпаргалки</h4>
+            <p class="benefit__descrpition">
+              Кожен урок підкріплений додатковим матеріалом для зручності.
+            </p>
+          </div>
+          <div class="benefit">
+            <img src="./assets/image/chat.png" alt="чат" class="benefit__img" />
+            <h4 class="benefit__title">Чат підтримки</h4>
+            <p class="benefit__descrpition">
+              Чат залишається з&nbsp;вами назавжди, там можна в&nbsp;будь-який
+              момент отримати відповідь на&nbsp;свої питання
+            </p>
+          </div>
+          <div class="benefit">
+            <img src="./assets/image/idea.png" alt="впевненість" class="benefit__img" />
+            <h4 class="benefit__title">Впевненість у&nbsp;собі</h4>
+            <p class="benefit__descrpition">
+              Системні знання, розуміння структури рекламного кабінету
+              Фейсбук. Більше жодних неправильних дій, які призводять
+              до&nbsp;зливу бюджетів та&nbsp;не&nbsp;дають результатів.
+            </p>
+          </div>
+        </div>
+        <a href="#registration" class="program__button">Хочу навчатись</a>
+      </div>
+    </section>
+    <div class="section-bg">
+      <section class="author section" id="author">
+        <div class="container author__container">
+          <div class="img-wrap">
+            <img src="./assets/image/Olga_author.png" alt="Оля" class="author__img" />
+          </div>
+          <div class="author__content-wrap">
+            <p class="author__subtitle">Автор курсу</p>
+            <h2 class="author__title">Ольга Поліщук</h2>
+            <ul class="author__about">
+              <li>
+                Маркетолог з&nbsp;психологічною освітою та&nbsp;викладач
+                таргетованої реклами і&nbsp;маркетингу. За&nbsp;моїми плечима
+                досвід роботи керівником маркетингових відділів
+                та&nbsp;таргетологом у&nbsp;проектах українського шоу-бізнесу:
+                Дмитро Карпачов, Оля Полякова, Кирило Куницький, муз.група
+                Руки Вверх.
+              </li>
+              <li>Офіційний партнер Facebook</li>
+              <li>
+                До&nbsp;війни, керівник відділу маркетингу в&nbsp;AVS agency.
+              </li>
+              <li>
+                Працюю з&nbsp;рекламним бюджетом&nbsp;&mdash;
+                135&nbsp;000&nbsp;$ на&nbsp;місяць.
+              </li>
+              <li>Вклала більше 15&nbsp;000&nbsp;$ у&nbsp;своє навчання.</li>
+              <li>
+                Викладач таргетованої реклами та&nbsp;маркетингу
+                на&nbsp;курсах Кирила Куницького та&nbsp;Дмитра Карпачова.
+              </li>
+              <li>
+                Методолог та&nbsp;автор програми курсу з&nbsp;таргету
+                у&nbsp;відомій онлайн школі України (не&nbsp;можу вказувати
+                назву).
+              </li>
+              <li>
+                Засновниця індивідуального формату навчання&nbsp;&mdash;
+                Наставництва з таргетованої реклами, маркетингу
+                та&nbsp;автоматизації воронок продажів.
+              </li>
+              <li>
+                Спікер курсу Антикризовий Маркетинг від Єви Висоцької
+                (@bilamolfarka).
+              </li>
+              <li>
+                Автор курсу &laquo;Просування з&nbsp;0&raquo; для підприємців
+                Чеської Республіки (мова курсу чеська).
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
-    </main>
-    <footer class="footer" id="contacts">
-      <ul class="footer__contacts">
-        <li class="footer__contacts-item"><a href="https://www.instagram.com/olha.polishchuk_/" class="footer__contacts-link instagram">olha.polishchuk_</a></li>
-        <li class="footer__contacts-item"><a href="https://t.me/olha_target" class="footer__contacts-link telegram">olha_target</a></li>
-        <li class="footer__contacts-item"><a href="mailto:ecotarget.polishchuk@gmail.com " class="footer__contacts-link mail">ecotarget.polishchuk@gmail.com</a></li>
-      </ul>
-    </footer>
-  </body>
+      <section class="section reviews" id="reviews">
+        <div class="container reviews__container">
+          <h2 class="section__title">Відгуки</h2>
+          <div class="reviews__slider">
+            <div class="slider">
+              <div class="review">
+                <p class="review__text">
+                  Привет-привет) прости за&nbsp;долгий ответ, мы&nbsp;болели,
+                  я&nbsp;пропала на&nbsp;время. Что могу сказать, довольная
+                  ппц как сильно. Ты появилась в&nbsp;моей жизни в&nbsp;самый
+                  нужный момент. Я&nbsp;до&nbsp;рождения малого уже подняла
+                  чек до&nbsp;300$, а&nbsp;потом когда разобралась в воронках
+                  и&nbsp;автоворонках, подняла до&nbsp;380$ и&nbsp;отдельно
+                  беру 200$ за&nbsp;чат боты в&nbsp;инсте. После родов,
+                  я&nbsp;поняла, как&nbsp;же важно иметь удаленную работу
+                  и&nbsp;при этом, чтобы она мне нравилась. Чувствую себя
+                  легко и&nbsp;свободно. CVV это тоже работа, я&nbsp;устаю,
+                  и&nbsp;бывают проблемы, но&nbsp;я&nbsp;при этом дома с
+                  ребенком, мне не&nbsp;выносят мозг, и&nbsp;в&nbsp;любимой
+                  работе всегда проще решать все сложных задачи. Так что
+                  таргет очень и&nbsp;твое обучение повлияло на&nbsp;мою жизнь
+                  очень сильно, мне страшно представить, как&nbsp;бы было без
+                  него, что&nbsp;бы я&nbsp;сейчас делала и как&nbsp;бы себя
+                  чувствовала. Спасибо тебе за&nbsp;твой подход к работе,
+                  заботилась обо мне как мама!
+                </p>
+              </div>
+              <div class="review">
+                <p class="review__text">
+                  Вибач, що&nbsp;тягнула з&nbsp;відгуком, в&nbsp;мене зараз
+                  зідзвони з&nbsp;новими клієнтами, трішки запара, але
+                  я&nbsp;щаслива! Я&nbsp;вже сотні разів тобі казала
+                  і&nbsp;ладна це&nbsp;писати постійно&nbsp;&mdash; такого
+                  матеріалу, підтримки і&nbsp;досвіду не&nbsp;дає ніхто,
+                  я&nbsp;не&nbsp;бачила жодного наставництва де&nbsp;б так
+                  сюсюкались, відповідали оперативно на всі запитання
+                  і&nbsp;розбирали проект кожного мого клієнта! мені здається,
+                  я&nbsp;зірвала джекпот, цінність навчання в&nbsp;сотні раз
+                  вища за&nbsp;вартість. А&nbsp;ця&nbsp;твоя фішка,
+                  що&nbsp;навіть після закінчення навчання, для нас (твоїх
+                  студентів) назавжди залишається доступ до&nbsp;чату
+                  да&nbsp;ти&nbsp;постійно публікуєш відео з
+                  оновленнями&nbsp;ФБ, розбираєшь макети, даєшь цінні
+                  рекомендації. І&nbsp;найголовніше ми&nbsp;можемо безкоштовно
+                  звертатись до&nbsp;тебе за консультацією з&nbsp;різних
+                  питань в&nbsp;будь-який час, це&nbsp;ж найцінніше
+                  і&nbsp;найважливіше. Ти&nbsp;зрозуміла,
+                  що&nbsp;я&nbsp;дуууже задоволена! Кращого варіанту
+                  я&nbsp;собі не&nbsp;могла і&nbsp;придумати!
+                </p>
+              </div>
+              <div class="review">
+                <p class="review__text">
+                  Оля привет! Хочу поблагодарить за&nbsp;обучение! Я&nbsp;біла
+                  очень далека от&nbsp;таргета и&nbsp;рекламы, но&nbsp;своя
+                  капкеечная заставила лупать эту скалу, нужно&nbsp;же как-то
+                  продвигаться. В&nbsp;общем, курс бомба, информации много,
+                  без воды и&nbsp;котиков, подаёшь простым языком, даже
+                  я&nbsp;смогла разобраться)) Спасибо за постоянную поддержку
+                  и&nbsp;рекомендации! Я&nbsp;теперь планирую уходить
+                  с&nbsp;работы и&nbsp;заниматься только своим делом, стала
+                  получать очень много заказов, в&nbsp;том числе
+                  от&nbsp;кофеен, работы не&nbsp;впроворот.
+                </p>
+              </div>
+              <div class="review">
+                <p class="review__text">
+                  Я&nbsp;очень долго выбирала обучение по&nbsp;таргетированной
+                  рекламе, хотела получить знания и&nbsp;практику,
+                  и&nbsp;в&nbsp;то&nbsp;же время не&nbsp;сидеть
+                  за&nbsp;уроками круглосуточно! Олечка, твоё
+                  обучение&nbsp;&mdash; это настоящий клад, курс полный,
+                  объемный. Знаний просто море, и это не&nbsp;сухая теория,
+                  все подкреплено домашками и&nbsp;твоим опытом, мега ценный
+                  материал. Но&nbsp;самое крутое&nbsp;&mdash; это конечно
+                  же&nbsp;маркетинговый подход ко&nbsp;всему!
+                  Ты&nbsp;не&nbsp;просто показываешь как круто настраивать
+                  рекламу, а&nbsp;её&nbsp;подготовить и&nbsp;что запускать
+                  в&nbsp;эту рекламу, чтобы достучаться до&nbsp;сердечка
+                  каждого человека. отдельная благодарность за&nbsp;короткие
+                  уроки по&nbsp;сути! Я&nbsp;могу вернуться в&nbsp;любой
+                  момент конкретно к&nbsp;той теме, которая нужна,
+                  и&nbsp;посмотреть урок на&nbsp;10&nbsp;минут, а&nbsp;не
+                  ковыряться в&nbsp;длинном видео на&nbsp;час. Благодарю, что
+                  всегда была на&nbsp;связи, разбирала каждый мой вопрос,
+                  подсказывала с идеями и&nbsp;стратегиями. С&nbsp;твоим
+                  обучением каждый сможет на просто хорошо разбираться
+                  в&nbsp;таргете, а&nbsp;стать СУПЕР КРУТЫМ ТАРГЕТОЛОГОМ!
+                  Желаю развития твоего курса и&nbsp;процветания.
+                </p>
+              </div>
+              <div class="review">
+                <p class="review__text">
+                  После прохождения обучения, хочу сказать ОГРОМНОЕ СПАСИБО!!
+                  Это уровень, с&nbsp;которым не&nbsp;сравнится ни&nbsp;одна
+                  школа по&nbsp;таргету и&nbsp;CММ, которую я&nbsp;прошла,
+                  а&nbsp;прошла я&nbsp;их&nbsp;больше десятка! Так просто
+                  и&nbsp;доступно объяснять&nbsp;&mdash; это талант! Знания
+                  стоящие, качественные, подкреплены все опытом. Впервые мне
+                  не&nbsp;страшно брать новых клиентов на&nbsp;ведение, это
+                  бомбическое достижение! Оля, ты&nbsp;лучшая, еще раз
+                  СПАСИБО!
+                </p>
+              </div>
+              <div class="review">
+                <p class="review__text">
+                  Оля, здравствуй! Обращалась к&nbsp;тебе
+                  за&nbsp;консультацией по таргету. Очень просто
+                  и&nbsp;понятно объяснила действие различных механизмов.
+                  Настройки, которые ты&nbsp;помогла сделать, существенно
+                  улучшили показатели кампании. Так&nbsp;же твои рекомендации
+                  по&nbsp;сайтам были очень ценные, мы&nbsp;внедрили пока
+                  только одну и&nbsp;больше клиентов теперь попадают
+                  в&nbsp;воронку. Огромное тебе спасибо! Подскажи, я&nbsp;могу
+                  твой контакт переать знакомому? Ему тоже нужна консультация
+                  по&nbsp;маркетингу!
+                </p>
+              </div>
+              <div class="review">
+                <p class="review__text">
+                  Оля, добрый день! Как оказалось, откликов на&nbsp;рекламу
+                  у&nbsp;нас гораздо больше, чем дает статистика, разбираемся
+                  с&nbsp;этим, дам Вам фидбек что и&nbsp;как позже.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <section class="section registration" id="registration">
+      <div class="container registration__container">
+        <div class="registration__left">
+          <h2 class="section__title">Тариф</h2>
+          <ul class="rate__description">
+            <li>6&nbsp;модулів</li>
+            <li>30&nbsp;уроків</li>
+            <li>Чек-листи, шаблони, інструкції</li>
+            <li>
+              Чат підтримки та&nbsp;зворотнього зв&rsquo;язку з&nbsp;Ольгою
+            </li>
+            <li>Доступ до&nbsp;уроків на&nbsp;6&nbsp;місяців</li>
+          </ul>
+        </div>
+        <div class="registration__right">
+          <p class="rate__del-price">
+            Повна вартість курсу&nbsp;&mdash; <del>3700 грн</del>
+          </p>
+          <p class="rate__price">
+            Вартість на&nbsp;час війни&nbsp;&mdash; <span>890 грн*</span>
+          </p>
+        </div>
+        <a href="https://polishchuktarget.wizzylab.com/products/courses/bazovii-kurs-po-targetovanii-reklami"
+          class="registration__button">Реєстріція на&nbsp;курс</a>
+        <p class="footnote">
+          * 200 грн з&nbsp;кожної оплати надсилаю на&nbsp;ЗСУ, відзвітую
+          в&nbsp;інстаграмі
+          <a href="https://www.instagram.com/olha.polishchuk_/">@olha.polishchuk_</a>
+        </p>
+      </div>
+    </section>
+  </main>
+  <footer class="footer" id="contacts">
+    <ul class="footer__contacts">
+      <li class="footer__contacts-item">
+        <a href="https://www.instagram.com/olha.polishchuk_/"
+          class="footer__contacts-link instagram">olha.polishchuk_</a>
+      </li>
+      <li class="footer__contacts-item">
+        <a href="https://t.me/olha_target" class="footer__contacts-link telegram">olha_target</a>
+      </li>
+      <li class="footer__contacts-item">
+        <a href="mailto:ecotarget.polishchuk@gmail.com "
+          class="footer__contacts-link mail">ecotarget.polishchuk@gmail.com</a>
+      </li>
+    </ul>
+  </footer>
+</body>
+
 </html>
